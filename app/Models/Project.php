@@ -16,4 +16,9 @@ class Project extends Model
             'tech_stack' => 'array',
         ];
     }
+
+    public function created_by()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
